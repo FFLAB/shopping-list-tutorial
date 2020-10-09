@@ -1,15 +1,22 @@
 body {
-  background-color: #282c34;
+  background-color: #1f5e43;
 }
 
+
 #list-container {
-  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
   margin: auto;
 }
 
 #list-container ul {
+  text-transform: uppercase;
   padding: 0;
   list-style: none;
+  display: flex;
 }
 
 #list-container ul li {
@@ -25,4 +32,6 @@ body {
 #list-container input {
   width: 100%;
   height: 35px;
+  border-radius: 10px;
+  padding: 0px 10px;
 }

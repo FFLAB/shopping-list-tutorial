@@ -3,7 +3,7 @@ import './App.css';
 
 const App = () => {
   const [items, setItems] = useState([
-    "oranges", "apples", "candy"
+    "esempio 1", "esempio 2"
   ]);
   return (
     <div id="list-container">
@@ -19,7 +19,7 @@ const App = () => {
 }
 
 const ListItem = (props) => (
-  <li onClick={()=> props.handleClick(props.name)}>{props.name}</li>
+  <li onClick={()=> props.handleClick(props.name)}>{props.name} </li>
 )
 
 const ListDisplay = (props) => {
@@ -45,7 +45,7 @@ const InputText = (props) => {
       props.handleSubmit(value);
       setValue('');
     }}>
-      <input type="text" value={value} onChange={e => setValue(e.target.value)}/>
+      <input type="text" placeholder="devo comprare..." value={value} onChange={e => setValue(e.target.value)}/>
     </form>
   )
 }
